@@ -8,6 +8,7 @@ UI component library for Vue 2 projects
 | VNav             | Alpha       |       |
 | VSideNav         | Alpha       |       |
 | VProgressLinear  | Alpha       |       |
-| VToast           | Alpha       |       |
 | VCard            | Alpha       |       |
 | VCarousel        | Alpha       |       |
+| VToast           | Alpha       |       |
+| VDialog          | Alpha       |       |
