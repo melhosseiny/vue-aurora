@@ -6,18 +6,26 @@
           v-if="clickableLogo"
           to="/"
         >
-          <img
+          <img v-if="logoSrc"
             :class="$style.profile"
             :src="logoSrc"
             :alt="appName"
           >
+          <template v-else>
+            {{ appName }}
+          </template>
         </router-link>
-        <img
-          v-else
-          :class="$style.profile"
-          :src="logoSrc"
-          :alt="appName"
-        >
+        <template v-else>
+          <img
+            v-if="logoSrc"
+            :class="$style.profile"
+            :src="logoSrc"
+            :alt="appName"
+          >
+          <template v-else>
+            {{ appName }}
+          </template>
+        </template>
       </div>
       <slot />
     </div>
@@ -46,7 +54,6 @@ export default {
 
 <style module>
 .header {
-  height: 50px;
   color: rgb(var(--text-color));
   font-weight: 700;
   background-color: rgb(var(--primary-color));
@@ -54,7 +61,7 @@ export default {
   display: flex;
   flex-direction: column;
   flex: 0 0 auto;
-  padding: 0 1em 1em 1em;
+  padding: 0.5em 1em;
   justify-content: space-between;
   box-sizing: border-box;
   overflow: hidden;
@@ -65,19 +72,13 @@ export default {
     flex: 0 0 auto;
     justify-content: space-between;
     box-sizing: border-box;
-    z-index: 10;
-    position: absolute;
-    top: 0;
-    left: 1rem;
-    right: 1rem;
   }
 
   & .brand {
+    font-family: var(--type-brand);
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    align-items: center;
   }
 
   & img.profile {
@@ -87,10 +88,9 @@ export default {
   }
 
   & nav {
-    margin-top: 0.5em;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
 
     & button,
     & a:global(.btn) {

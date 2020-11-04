@@ -23,8 +23,8 @@ export default {
 
 <style module>
 :root {
-  --progress-bg-color: red;
-  --progress-color: green;
+  --progress-bg-color: rgba(var(--accent-color), 0.5);
+  --progress-color: rgb(var(--accent-color));
 }
 
 @keyframes primary-indeterminate-translate {
