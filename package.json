@@ -57,6 +57,6 @@
     "vue-template-compiler": "^2.6.12"
   },
   "dependencies": {
-    "commonmark": "^0.29.1"
+    "commonmark": "0.29.1"
   }
 }
