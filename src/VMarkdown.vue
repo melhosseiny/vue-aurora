@@ -18,7 +18,7 @@ export default {
   },
   data() {
     return {
-      markup: "<p>Hello, Markdown!</p>"
+      markup: ""
     }
   },
   async created() {

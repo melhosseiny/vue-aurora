@@ -29,7 +29,7 @@ export default {
 
 <style module>
 dialog {
-  font-family: var(--primary-font-family);
+  font-family: var(--type-body);
   padding: 0;
   border: 1px solid rgba(0, 0, 0, 0.12);
   min-width: 280px;
@@ -63,11 +63,6 @@ dialog button {
 
   & + button {
     margin-left: 0.25em;
-  }
-
-  &:hover {
-    background-color: var(--text-decoration-color);
-    color: #fff;
   }
 }
 
