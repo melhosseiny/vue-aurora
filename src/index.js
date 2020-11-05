@@ -4,6 +4,7 @@ export { default as VSideNav } from "./VSideNav.vue";
 export { default as VProgressLinear } from "./VProgressLinear.vue";
 export { default as VCard } from "./VCard.vue";
 export { default as VCarousel } from "./VCarousel.vue";
+export { default as VMarkdown } from "./VMarkdown.vue";
 
 export { default as VToast } from "./VToast.vue";
 export { default as VToastPlugin } from "./VToastPlugin.js";

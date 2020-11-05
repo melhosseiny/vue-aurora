@@ -79,6 +79,20 @@ export default {
     display: flex;
     flex-direction: row;
     align-items: center;
+    letter-spacing: var(--type-brand-letter-spacing);
+
+    & a,
+    & a:link,
+    & a:visited,
+    & a:hover,
+    & a:active {
+      color: rgb(var(--background-color));
+    }
+
+    & a:hover,
+    & a:active {
+      text-decoration: none;
+    }
   }
 
   & img.profile {
