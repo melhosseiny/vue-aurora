@@ -12,3 +12,10 @@ UI component library for Vue 2 projects
 | VCarousel        | Alpha       |       |
 | VToast           | Alpha       |       |
 | VDialog          | Alpha       |       |
+| VMarkdown        | Alpha       |       |
+
+
+| Plugins          | Status      | Tests |
+|------------------|-------------|-------|
+| VToastPlugin     | Alpha       |       |
+| VDialogPlugin    | Alpha       |       |
